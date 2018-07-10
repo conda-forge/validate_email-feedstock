@@ -14,14 +14,15 @@ Summary: Validate_email is a package for Python that check if an email is valid,
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/validate_email-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/validate_email-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/validate_email-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/validate_email-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/validate_email-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/validate-email-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/validate_email-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/validate_email-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/validate_email/badges/version.svg)](https://anaconda.org/conda-forge/validate_email)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/validate_email/badges/downloads.svg)](https://anaconda.org/conda-forge/validate_email)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-validate_email-green.svg)](https://anaconda.org/conda-forge/validate_email) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/validate_email.svg)](https://anaconda.org/conda-forge/validate_email) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/validate_email.svg)](https://anaconda.org/conda-forge/validate_email) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/validate_email.svg)](https://anaconda.org/conda-forge/validate_email) |
 
 Installing validate_email
 =========================
