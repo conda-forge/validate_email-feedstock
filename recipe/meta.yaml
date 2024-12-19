@@ -8,34 +8,39 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 3
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 4
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
   host:
+    - python {{ python_min }}
     - pip
-    - python
     - setuptools
   run:
-    - python
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
+    - pip
   imports:
     - validate_email
+  commands:
+    - pip check
 
 about:
   home: https://github.com/syrusakbary/validate_email
-  license: LGPL
+  license: LGPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
-  summary: 'Validate_email is a package for Python that check if an email is
-            valid, properly formatted and really exists.'
-
+  summary: |
+    Validate_email is a package for Python that check if an email is
+    valid, properly formatted and really exists.
   dev_url: https://github.com/syrusakbary/validate_email
 
 extra:
