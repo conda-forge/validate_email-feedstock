@@ -5,9 +5,11 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/validate_email-
 
 Home: https://github.com/syrusakbary/validate_email
 
-Package license: LGPL
+Package license: LGPL-3.0-or-later
 
-Summary: Validate_email is a package for Python that check if an email is valid, properly formatted and really exists.
+Summary: Validate_email is a package for Python that check if an email is
+valid, properly formatted and really exists.
+
 
 Development: https://github.com/syrusakbary/validate_email
 
